@@ -1,14 +1,3 @@
-/* ==========================================================================
-   Project_hcb: Developer Portfolio Stylesheet
-   Mirroring Bootstrap Assignment & Demo Concepts:
-   - Clean, readable, well-commented code
-   - Modern typography with 'Manrope' & 'DM Mono'
-   - Sleek frosted glassmorphism, blur effects & ambient lighting
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. Theme Variables & Reset
-   -------------------------------------------------------------------------- */
 :root {
     --bg: #080b12;
     --panel: #0d121d;
@@ -47,9 +36,6 @@ a {
     text-decoration: none;
 }
 
-/* --------------------------------------------------------------------------
-   2. Typography & Text Hierarchy
-   -------------------------------------------------------------------------- */
 h1 {
     font-size: clamp(3.25rem, 6.1vw, 5.8rem);
     line-height: 1.06;
@@ -73,6 +59,7 @@ h3 {
     margin: 0 0 9px;
 }
 
+/* Gradient text clipping */
 .gradient-text {
     background: linear-gradient(100deg, #8fb2ff 8%, #5d8bff 47%, #73d9fa 100%);
     -webkit-background-clip: text;
@@ -99,7 +86,6 @@ h3 {
     max-width: 700px;
 }
 
-/* Monospace Badges, Labels & Kickers */
 .eyebrow,
 .section-kicker,
 .hero-meta,
@@ -131,9 +117,6 @@ h3 {
     box-shadow: 0 0 14px rgba(117, 227, 176, 0.8);
 }
 
-/* --------------------------------------------------------------------------
-   3. Layout Spacing & Dividers
-   -------------------------------------------------------------------------- */
 .section-pad {
     padding: 112px 0;
 }
@@ -146,9 +129,7 @@ h3 {
     margin-bottom: 48px;
 }
 
-/* --------------------------------------------------------------------------
-   4. Navbar (Frosted Glassmorphism)
-   -------------------------------------------------------------------------- */
+/* Frosted glass navbar */
 .site-nav {
     background: rgba(8, 11, 18, 0.88);
     backdrop-filter: blur(18px);
@@ -184,9 +165,7 @@ h3 {
     padding: 9px 14px;
 }
 
-/* --------------------------------------------------------------------------
-   5. Hero Section & Ambient Lighting
-   -------------------------------------------------------------------------- */
+/* Dual radial glow backdrop */
 .hero {
     padding-top: 175px;
     padding-bottom: 70px;
@@ -246,9 +225,6 @@ h3 {
     background: linear-gradient(var(--blue), transparent);
 }
 
-/* --------------------------------------------------------------------------
-   6. Buttons
-   -------------------------------------------------------------------------- */
 .btn {
     font-weight: 700;
     font-size: 0.9rem;
@@ -286,9 +262,7 @@ h3 {
     background: rgba(255, 255, 255, 0.05);
 }
 
-/* --------------------------------------------------------------------------
-   7. Terminal Card Component (Hero Visual with Ambient Glow)
-   -------------------------------------------------------------------------- */
+/* 3D tilt perspective for code terminal */
 .terminal-card {
     position: relative;
     max-width: 455px;
@@ -421,7 +395,6 @@ h3 {
     height: 5px;
 }
 
-/* Floating Frosted Chips */
 .floating-chip {
     position: absolute;
     display: flex;
@@ -459,9 +432,6 @@ h3 {
     color: #8bdffb;
 }
 
-/* --------------------------------------------------------------------------
-   8. About Section Facts Card
-   -------------------------------------------------------------------------- */
 .about-facts {
     border-top: 1px solid var(--line);
 }
@@ -480,9 +450,6 @@ h3 {
     color: #e6edf7;
 }
 
-/* --------------------------------------------------------------------------
-   9. Skill & Project Cards (Glassmorphism & Depth)
-   -------------------------------------------------------------------------- */
 .skill-card,
 .project-card {
     height: 100%;
@@ -595,9 +562,6 @@ h3 {
     margin-left: 5px;
 }
 
-/* --------------------------------------------------------------------------
-   10. Project Artwork Components (Frosted Glass & Art)
-   -------------------------------------------------------------------------- */
 .projects-heading {
     display: flex;
     align-items: flex-end;
@@ -618,9 +582,81 @@ h3 {
     background: #0e1827;
 }
 
-/* Food Surplus Art */
-.food-art {
-    background: radial-gradient(ellipse at 60% 50%, #173c5a 0, #101c2e 45%, #0c111b 80%);
+.project-info {
+    padding: 23px 24px 25px;
+}
+
+.project-title-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.project-type {
+    font-size: 0.58rem;
+    color: #7796d7;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.project-arrow {
+    color: #a2b8e9;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.project-direct-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--mono);
+    font-size: 0.73rem;
+    color: #a4beff;
+    padding: 7px 14px;
+    border-radius: 7px;
+    border: 1px solid rgba(137, 157, 187, 0.22);
+    background: rgba(91, 134, 247, 0.08);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.project-direct-link:hover {
+    color: #ffffff;
+    border-color: #5b86f7;
+    background: rgba(91, 134, 247, 0.22);
+    box-shadow: 0 4px 15px rgba(91, 134, 247, 0.25);
+    transform: translateY(-2px);
+}
+
+.project-direct-link .project-arrow {
+    font-size: 1rem;
+    line-height: 1;
+    color: #a4beff;
+}
+
+.project-direct-link:hover .project-arrow {
+    transform: translate(2px, -2px);
+    color: #ffffff;
+}
+
+.project-meta-badge {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: #8fa3c7;
+    background: rgba(13, 19, 30, 0.75);
+    border: 1px solid rgba(137, 157, 187, 0.2);
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.attendance-art {
+    background: radial-gradient(ellipse at 60% 50%, #153e5b 0, #101c2e 45%, #0c111b 80%);
 }
 
 .art-grid {
@@ -703,85 +739,6 @@ h3 {
     border-color: rgba(111, 194, 234, 0.28);
 }
 
-.project-info {
-    padding: 23px 24px 25px;
-}
-
-.project-title-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    align-items: flex-start;
-    margin-bottom: 12px;
-}
-
-.project-type {
-    font-size: 0.58rem;
-    color: #7796d7;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.project-arrow {
-    color: #a2b8e9;
-    font-size: 1.1rem;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.project-direct-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    font-family: var(--mono);
-    font-size: 0.73rem;
-    color: #a4beff;
-    padding: 7px 14px;
-    border-radius: 7px;
-    border: 1px solid rgba(137, 157, 187, 0.22);
-    background: rgba(91, 134, 247, 0.08);
-    transition: all 0.2s ease;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.project-direct-link:hover {
-    color: #ffffff;
-    border-color: #5b86f7;
-    background: rgba(91, 134, 247, 0.22);
-    box-shadow: 0 4px 15px rgba(91, 134, 247, 0.25);
-    transform: translateY(-2px);
-}
-
-.project-direct-link .project-arrow {
-    font-size: 1rem;
-    line-height: 1;
-    color: #a4beff;
-}
-
-.project-direct-link:hover .project-arrow {
-    transform: translate(2px, -2px);
-    color: #ffffff;
-}
-
-.project-meta-badge {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    color: #8fa3c7;
-    background: rgba(13, 19, 30, 0.75);
-    border: 1px solid rgba(137, 157, 187, 0.2);
-    padding: 3px 8px;
-    border-radius: 4px;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-}
-
-/* Attendance Art */
-.attendance-art {
-    background: radial-gradient(ellipse at 60% 50%, #153e5b 0, #101c2e 45%, #0c111b 80%);
-}
-
-/* Architecture Art (3-Tier Layered) */
 .architecture-art {
     background: radial-gradient(ellipse at 50% 50%, #202b4d 0, #101525 65%, #0d111a);
 }
@@ -815,7 +772,6 @@ h3 {
     color: #8fb2ff;
 }
 
-/* DSA Art (Binary Tree / Complexity) */
 .dsa-art {
     background: radial-gradient(ellipse at 55% 50%, #2b1b4d 0, #161129 60%, #0a0814);
 }
@@ -837,7 +793,6 @@ h3 {
     justify-content: space-between;
 }
 
-/* MySQL Art */
 .mysql-art {
     background: radial-gradient(ellipse at 50% 50%, #173b40 0, #101d27 55%, #0b111a);
 }
@@ -860,7 +815,6 @@ h3 {
     justify-content: space-between;
 }
 
-/* Python Core Art */
 .python-art {
     background: radial-gradient(ellipse at 50% 50%, #293016 0, #181c10 55%, #0a0d0d);
 }
@@ -883,81 +837,11 @@ h3 {
     justify-content: space-between;
 }
 
-/* ATM Art */
-.atm-art {
-    background: radial-gradient(ellipse at 50% 50%, #252f50, #101525 65%, #0d111a);
-}
-
-.atm-card {
-    position: absolute;
-    z-index: 2;
-    left: 19%;
-    top: 22%;
-    width: 62%;
-    height: 58%;
-    border: 1px solid #53658d;
-    border-radius: 12px;
-    background: linear-gradient(125deg, rgba(61, 82, 132, 0.85), rgba(21, 32, 57, 0.9));
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    padding: 17px;
-    box-shadow: 0 15px 35px #050811;
-    transform: rotate(-7deg);
-}
-
-.atm-chip {
-    display: block;
-    width: 23px;
-    height: 17px;
-    border-radius: 4px;
-    border: 1px solid #b4b8bb;
-    background: linear-gradient(135deg, #b9c8d2, #6d8299);
-}
-
-.atm-brand {
-    position: absolute;
-    right: 15px;
-    top: 17px;
-    font-family: var(--mono);
-    font-size: 0.53rem;
-    color: #cbd7ef;
-}
-
-.atm-number {
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.05em;
-    margin-top: 24px;
-    color: #e0e8f8;
-}
-
-.atm-footer {
-    position: absolute;
-    bottom: 13px;
-    left: 17px;
-    right: 17px;
-    display: flex;
-    justify-content: space-between;
-    font-family: var(--mono);
-    font-size: 0.47rem;
-    color: #a5b5d6;
-}
-
-.atm-ring {
-    position: absolute;
-    width: 260px;
-    height: 260px;
-    border: 1px solid rgba(124, 154, 219, 0.2);
-    border-radius: 50%;
-    top: -70px;
-    right: -40px;
-}
-
-/* Database Art */
 .database-art {
     background: radial-gradient(ellipse at 50% 48%, #173b40, #101d27 55%, #0b111a);
 }
 
+/* CSS cylinder shape for DB icon */
 .db-cylinder {
     position: absolute;
     left: 18%;
@@ -1019,7 +903,6 @@ h3 {
     background: linear-gradient(90deg, #4f998d, transparent);
 }
 
-/* Project CTA Box */
 .project-cta {
     height: 100%;
     min-height: 240px;
@@ -1051,9 +934,6 @@ h3 {
     margin: 18px 0 0;
 }
 
-/* --------------------------------------------------------------------------
-   11. Timeline Component
-   -------------------------------------------------------------------------- */
 .timeline {
     max-width: 850px;
     margin-left: 8px;
@@ -1105,9 +985,6 @@ h3 {
     color: #718097;
 }
 
-/* --------------------------------------------------------------------------
-   12. Contact Section & Glowing Ambient Backdrop
-   -------------------------------------------------------------------------- */
 .contact-section {
     padding-top: 90px;
     padding-bottom: 100px;
@@ -1124,7 +1001,7 @@ h3 {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 }
 
-/* The ambient blurred glow effect behind the contact panel */
+/* Ambient 75px blurred aura behind contact box */
 .contact-glow {
     position: absolute;
     pointer-events: none;
@@ -1157,9 +1034,6 @@ h3 {
     margin: 22px 0 0;
 }
 
-/* --------------------------------------------------------------------------
-   13. Footer
-   -------------------------------------------------------------------------- */
 .site-footer {
     border-top: 1px solid rgba(137, 157, 187, 0.12);
     padding: 25px 0;
@@ -1186,16 +1060,10 @@ h3 {
     color: #ffffff;
 }
 
-/* --------------------------------------------------------------------------
-   14. Animations
-   -------------------------------------------------------------------------- */
 @keyframes blink {
     50% { opacity: 0; }
 }
 
-/* --------------------------------------------------------------------------
-   15. Responsive Adaptations
-   -------------------------------------------------------------------------- */
 @media (max-width: 991.98px) {
     .section-pad {
         padding: 85px 0;
