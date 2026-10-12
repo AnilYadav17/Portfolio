@@ -79,7 +79,7 @@ Portfolio/
 ├── style.css         # Modern dark theme, glassmorphism, and responsive CSS rules
 ├── README.md         # Professional documentation & repository overview
 ├── .gitignore        # Standard Git ignore file for web projects
-└── images/           # Reserved folder for screenshots or custom media
+└── images/           # Profile photo (profile.jpg) and project assets
 ```
 
 ---
@@ -102,7 +102,10 @@ cd Portfolio
 ## 👨‍💻 Author
 
 **Anil Yadav**
-- 🎓 Computer Science & Engineering Student (Class of 2027)
+- 🎓 B.Tech Computer Science & Engineering (Class of 2027)
+- 🏛️ College: Sri Aurobindo Institute of Technology, Indore
+- 🏫 Schooling: Jawahar Navodaya Vidyalaya, Dewas
+- 🚀 Technical Training: InfoBeans Foundation (Batch 18)
 - 📍 Indore, Madhya Pradesh, India
 - 🐙 GitHub: [@AnilYadav17](https://github.com/AnilYadav17)
 - 💼 LinkedIn: [anilyadav17](https://www.linkedin.com/in/anilyadav17/)
