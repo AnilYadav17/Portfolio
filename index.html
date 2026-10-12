@@ -59,27 +59,8 @@
         <div class="row align-items-center gy-5">
 
           <div class="col-lg-7">
-            <!-- Hero Profile & Availability Badge -->
-            <div class="hero-profile-row d-flex align-items-center gap-3 mb-4">
-              <div class="hero-avatar-frame" aria-label="Profile photo container">
-                <div class="hero-avatar-inner">
-                  <img src="images/profile.jpg"
-                    alt="Anil Yadav — Computer Science Student &amp; Aspiring Software Developer"
-                    class="hero-avatar-img" width="90" height="90" loading="eager" onerror="this.style.display='none';">
-                  <div class="hero-avatar-fallback" aria-hidden="true">
-                    <span>AY</span>
-                  </div>
-                </div>
-                <span class="hero-avatar-status" title="Open to learning &amp; opportunities"></span>
-              </div>
-              <div class="hero-badge-meta">
-                <div class="eyebrow mb-1">
-                  <span class="status-dot"></span> OPEN TO LEARNING &amp; OPPORTUNITIES
-                </div>
-                <div class="hero-profile-sub">
-                  <span>Anil Yadav</span> <span class="sub-sep">·</span> <span>B.Tech CSE '27</span>
-                </div>
-              </div>
+            <div class="eyebrow">
+              <span class="status-dot"></span> OPEN TO LEARNING &amp; OPPORTUNITIES
             </div>
 
             <h1>Building my way<br>through <span class="gradient-text">technology.</span></h1>
@@ -110,60 +91,93 @@
           </div>
 
           <div class="col-lg-5">
-            <!-- Terminal mockup -->
-            <div class="terminal-card" aria-label="Decorative code terminal">
-              <div class="terminal-top">
-                <div class="window-dots">
-                  <i></i><i></i><i></i>
-                </div>
-                <span>anil.py</span>
-                <span class="terminal-menu">•••</span>
-              </div>
+            <div class="developer-profile-hub">
 
-              <div class="terminal-body">
-                <div class="code-line">
-                  <span class="line-no">01</span><span><b class="code-purple">class</b> <b
-                      class="code-blue">Developer</b>:</span>
+              <!-- Prominent Developer Profile Card -->
+              <div class="profile-card" aria-label="Developer profile card">
+                <div class="profile-avatar-box">
+                  <div class="profile-avatar-inner">
+                    <img src="images/profile.jpg"
+                      alt="Anil Yadav — Computer Science Student &amp; Aspiring Software Developer"
+                      class="profile-avatar-img" width="125" height="125" loading="eager"
+                      onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex';">
+                    <div class="profile-avatar-fallback" id="profile-fallback" aria-hidden="true">
+                      <span>AY</span>
+                    </div>
+                  </div>
+                  <span class="profile-status-badge" title="Open to learning &amp; opportunities"></span>
                 </div>
-                <div class="code-line indent">
-                  <span class="line-no">02</span><span><b class="code-purple">def</b> <b
-                      class="code-yellow">__init__</b>(self):</span>
-                </div>
-                <div class="code-line indent2">
-                  <span class="line-no">03</span><span>self.name = <b class="code-green">"Anil Yadav"</b></span>
-                </div>
-                <div class="code-line indent2">
-                  <span class="line-no">04</span><span>self.focus = <b class="code-green">"Software"</b></span>
-                </div>
-                <div class="code-line indent2">
-                  <span class="line-no">05</span><span>self.mode = <b class="code-green">"Keep learning"</b></span>
-                </div>
-                <div class="code-line spacer">
-                  <span class="line-no">06</span><span></span>
-                </div>
-                <div class="code-line">
-                  <span class="line-no">07</span><span><b class="code-purple">while</b> <b
-                      class="code-orange">True</b>:</span>
-                </div>
-                <div class="code-line indent">
-                  <span class="line-no">08</span><span>learn()</span>
-                </div>
-                <div class="code-line indent">
-                  <span class="line-no">09</span><span>build()</span><span class="cursor"></span>
+
+                <div class="profile-info-box">
+                  <div class="profile-name-row">
+                    <h2 class="profile-name">Anil Yadav</h2>
+                    <span class="profile-check" title="Verified Portfolio">✓</span>
+                  </div>
+                  <p class="profile-role">Computer Science &amp; Engineering</p>
+                  <p class="profile-college">Sri Aurobindo Inst. of Technology, Indore</p>
+                  <div class="profile-pills">
+                    <span class="pill-item">B.Tech '27</span>
+                    <span class="pill-item">InfoBeans Batch 18</span>
+                  </div>
                 </div>
               </div>
 
-              <div class="terminal-bottom">
-                <span><span class="status-dot"></span> all systems learning</span>
-                <span>UTF-8 · Python</span>
+              <!-- Terminal mockup -->
+              <div class="terminal-card" aria-label="Decorative code terminal">
+                <div class="terminal-top">
+                  <div class="window-dots">
+                    <i></i><i></i><i></i>
+                  </div>
+                  <span>anil.py</span>
+                  <span class="terminal-menu">•••</span>
+                </div>
+
+                <div class="terminal-body">
+                  <div class="code-line">
+                    <span class="line-no">01</span><span><b class="code-purple">class</b> <b
+                        class="code-blue">Developer</b>:</span>
+                  </div>
+                  <div class="code-line indent">
+                    <span class="line-no">02</span><span><b class="code-purple">def</b> <b
+                        class="code-yellow">__init__</b>(self):</span>
+                  </div>
+                  <div class="code-line indent2">
+                    <span class="line-no">03</span><span>self.name = <b class="code-green">"Anil Yadav"</b></span>
+                  </div>
+                  <div class="code-line indent2">
+                    <span class="line-no">04</span><span>self.focus = <b class="code-green">"Software &amp; Databases"</b></span>
+                  </div>
+                  <div class="code-line indent2">
+                    <span class="line-no">05</span><span>self.mode = <b class="code-green">"Continuous learning"</b></span>
+                  </div>
+                  <div class="code-line spacer">
+                    <span class="line-no">06</span><span></span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-no">07</span><span><b class="code-purple">while</b> <b
+                        class="code-orange">True</b>:</span>
+                  </div>
+                  <div class="code-line indent">
+                    <span class="line-no">08</span><span>learn()</span>
+                  </div>
+                  <div class="code-line indent">
+                    <span class="line-no">09</span><span>build()</span><span class="cursor"></span>
+                  </div>
+                </div>
+
+                <div class="terminal-bottom">
+                  <span><span class="status-dot"></span> all systems learning</span>
+                  <span>UTF-8 · Python</span>
+                </div>
+
+                <div class="floating-chip chip-one">
+                  <span class="chip-icon">⌘</span> Problem solving
+                </div>
+                <div class="floating-chip chip-two">
+                  <span class="chip-icon blue-icon">&lt;/&gt;</span> Building in public
+                </div>
               </div>
 
-              <div class="floating-chip chip-one">
-                <span class="chip-icon">⌘</span> Problem solving
-              </div>
-              <div class="floating-chip chip-two">
-                <span class="chip-icon blue-icon">&lt;/&gt;</span> Building in public
-              </div>
             </div>
           </div>
 
